@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="f">
+        <div id="calc">
+            <div id="result">
+                <input type="text" id="textval" name="a"/>
+            </div>
+
+            <div id="main-content">
+                <div id="numbers">
+                    <div>
+                        <input type="button" value="7" onclick="f.a.value += '7' ">
+                        <input type="button" value="8" onclick="f.a.value += '8' ">
+                        <input type="button" value="9" onclick="f.a.value += '9' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="f.a.value += '4' ">
+                        <input type="button" value="5" onclick="f.a.value += '5' ">
+                        <input type="button" value="6" onclick="f.a.value += '6' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="f.a.value += '1' ">
+                        <input type="button" value="2" onclick="f.a.value += '2' ">
+                        <input type="button" value="3" onclick="f.a.value += '3' ">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="f.a.value += '0' ">
+                        <input type="button" value="." onclick="f.a.value += '.' ">
+
+                        <input type="button" value="=" onclick="f.a.value = eval(f.a.value) ">
+                    </div>
+                </div>
+                <div id="operators">
+                    <input type="button" value="del" onclick="f.a.value = ' ' " id="clear">
+                    <input type="button" value="+" onclick="f.a.value += '+' ">
+                        <input type="button" value="-" onclick="f.a.value += '-' ">
+                        <input type="button" value="*" onclick="f.a.value += '*' ">
+                        <input type="button" value="/" onclick="f.a.value += '/' ">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

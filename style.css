@@ -1,0 +1,39 @@
+
+body {
+    background-color: aquamarine;
+}
+
+#calc {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content {
+    display: flex;
+    padding: 1%;
+}
+
+#result {
+    padding: 4%;
+    width: 160%;
+}
+
+#numbers {
+    font-size: 20px;
+    padding: 10%;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.cli {
+    height: 30px;
+    width: 30px;
+}
