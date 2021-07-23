@@ -1,36 +1,75 @@
 
 body {
-    background-color: aquamarine;
+    background-image:url('https://styledme.com/wp-content/uploads/2021/01/blue-sky-plain-zoom-background-simple-minimalist-virtual-calls-backdrop.jpg');
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+form {
+    margin-top: 5%;
 }
 
 #calc {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey;
+    background-color: rgb(32, 30, 30);
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 #main-content {
     display: flex;
-    padding: 1%;
+    padding: 1% 1% 5% 5%;
+}
+
+#textval {
+    width: 86%;
+    height: 2em;
+    margin-left: 6%;
+    padding: 0.2em;
 }
 
 #result {
-    padding: 4%;
-    width: 160%;
+    padding: 5% 4% 4% 4%;
 }
 
 #numbers {
-    font-size: 20px;
-    padding: 10%;
+    padding: 1% 0% 0% 5%;
+}
+
+.btn {
+    width: 1.75em;
+    font-size: 30px;
+    height: 1.75em;   
+    border-radius: 5px; 
+    border: 2px solid darkgray;
+    padding: 2px;
+    margin: 2px;
+}
+
+#numbers .btn {
+    color: white;
+    background-color: rgb(92, 84, 84);
+}
+
+.k {
+    width: 3.8em;
 }
 
 #operators {
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    padding: 1% 1% 1% 5%;
+}
+
+#operators .btn {
+    background-color: rgb(243, 145, 54);
 }
 
 .cli {

@@ -10,45 +10,50 @@
 </head>
 
 <body>
+    <h1>Calculator</h1>
     <form name="f">
         <div id="calc">
             <div id="result">
-                <input type="text" id="textval" name="a"/>
+                <input type="text" id="textval" name="a" placeholder="0" />
             </div>
 
             <div id="main-content">
                 <div id="numbers">
                     <div>
-                        <input type="button" value="7" onclick="f.a.value += '7' ">
-                        <input type="button" value="8" onclick="f.a.value += '8' ">
-                        <input type="button" value="9" onclick="f.a.value += '9' ">
+                        <input type="button" class="btn" value="C" onclick="f.a.value = ' ' " id="clear">
+                        <input type="button" class="btn k" value="Clear" onclick="f.a.value = '0' " id="clear">
                     </div>
                     <div>
-                        <input type="button" value="4" onclick="f.a.value += '4' ">
-                        <input type="button" value="5" onclick="f.a.value += '5' ">
-                        <input type="button" value="6" onclick="f.a.value += '6' ">
+                        <input type="button" class="btn" value="7" onclick="f.a.value += '7' ">
+                        <input type="button" class="btn" value="8" onclick="f.a.value += '8' ">
+                        <input type="button" class="btn" value="9" onclick="f.a.value += '9' ">
                     </div>
                     <div>
-                        <input type="button" value="1" onclick="f.a.value += '1' ">
-                        <input type="button" value="2" onclick="f.a.value += '2' ">
-                        <input type="button" value="3" onclick="f.a.value += '3' ">
+                        <input type="button" class="btn" value="4" onclick="f.a.value += '4' ">
+                        <input type="button" class="btn" value="5" onclick="f.a.value += '5' ">
+                        <input type="button" class="btn" value="6" onclick="f.a.value += '6' ">
                     </div>
                     <div>
-                        <input type="button" value="0" onclick="f.a.value += '0' ">
-                        <input type="button" value="." onclick="f.a.value += '.' ">
+                        <input type="button" class="btn" value="1" onclick="f.a.value += '1' ">
+                        <input type="button" class="btn" value="2" onclick="f.a.value += '2' ">
+                        <input type="button" class="btn" value="3" onclick="f.a.value += '3' ">
+                    </div>
+                    <div>
+                        <input type="button" class="btn k" value="0" onclick="f.a.value += '0' ">
+                        <input type="button" class="btn" value="." onclick="f.a.value += '.' ">
 
-                        <input type="button" value="=" onclick="f.a.value = eval(f.a.value) ">
                     </div>
                 </div>
                 <div id="operators">
-                    <input type="button" value="del" onclick="f.a.value = ' ' " id="clear">
-                    <input type="button" value="+" onclick="f.a.value += '+' ">
-                        <input type="button" value="-" onclick="f.a.value += '-' ">
-                        <input type="button" value="*" onclick="f.a.value += '*' ">
-                        <input type="button" value="/" onclick="f.a.value += '/' ">
+                    <input type="button" class="btn" value="+" onclick="f.a.value += '+' ">
+                    <input type="button" class="btn" value="-" onclick="f.a.value += '-' ">
+                    <input type="button" class="btn" value="*" onclick="f.a.value += '*' ">
+                    <input type="button" class="btn" value="/" onclick="f.a.value += '/' ">
+                    <input type="button" class="btn" value="=" onclick="f.a.value = eval(f.a.value) ">
                 </div>
             </div>
         </div>
     </form>
 </body>
+
 </html>
